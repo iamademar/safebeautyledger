@@ -8,7 +8,7 @@ const { API_URL, PRIVATE_KEY } = process.env;
 
 module.exports = {
   solidity: "0.8.24",
-   defaultNetwork: "holesky",
+   defaultNetwork: "holesky", //hardhat
    networks: {
       hardhat: {
         accounts: {
