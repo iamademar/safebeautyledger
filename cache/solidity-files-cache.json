@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/ademartutor/Documents/Github/safebeautyledger/contracts/BeautyProductManager.sol": {
-      "lastModificationDate": 1726226895074,
+    "/home/user/Documents/safebeu/safebeautyledger/contracts/BeautyProductManager.sol": {
+      "lastModificationDate": 1728012677326,
       "contentHash": "5f4c9bc207dda7ba21de8630cb04b04d",
       "sourceName": "contracts/BeautyProductManager.sol",
       "solcConfig": {

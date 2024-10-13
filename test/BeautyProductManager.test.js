@@ -68,15 +68,16 @@ describe("BeautyProductManager", function () {
   it("Should update product information", async function () {
     this.timeout(60000); 
     const newProduct = {
-      product_id: "12345",
+      product_id: "123456",
       name: "Hydrating Face Serum",
       current_location: "warehouse"
     };
 
-    await beautyProductManager.addBeautyProduct(
+    await expect(beautyProductManager.addBeautyProduct(
       newProduct.product_id,
       JSON.stringify(newProduct)
-    );
+    )).to.emit(beautyProductManager, "BeautyProductAdded")
+      .withArgs("123456");
 
     const productCount = await beautyProductManager.getBeautyProductCount();
     expect(productCount).to.equal(1);
@@ -85,10 +86,12 @@ describe("BeautyProductManager", function () {
       ...newProduct,
       current_location: "Store A"
     };
-    await beautyProductManager.updateProduct("12345", JSON.stringify(updatedProduct));
+    await expect(beautyProductManager.updateProduct("123456", JSON.stringify(updatedProduct)))
+      .to.emit(beautyProductManager, "ProductUpdated")
+      .withArgs("123456");
 
-    const [product_id, jsonData] = await beautyProductManager.getBeautyProduct("12345");
-    expect(product_id).to.equal("12345");
+    const [product_id, jsonData] = await beautyProductManager.getBeautyProduct("123456");
+    expect(product_id).to.equal("123456");
     const parsedProduct = JSON.parse(jsonData);
     expect(parsedProduct.current_location).to.equal("Store A");
   });
