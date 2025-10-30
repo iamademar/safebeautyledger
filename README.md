@@ -1,3 +1,17 @@
+SafeBeautyLedger is a blockchain-based platform designed to ensure transparency, traceability, and accountability in the beauty industry. By leveraging Ethereum smart contracts and decentralized ledger technology, it allows beauty brands and suppliers to record and verify product sourcing, manufacturing processes, and certifications in an immutable and transparent manner. This system helps build trust with consumers by providing accessible, verified data about the safety and authenticity of beauty products, ultimately promoting ethical practices and reducing counterfeit goods in the market. 
+
+🔗 [ExpressJS API](https://github.com/iamademar/safebeautyledger-api)
+
+🔗 [SafeBeautyLedger Smart Contract](https://github.com/iamademar/safebeautyledger)
+
+🔗 [Next.js Regulator App](https://github.com/iamademar/safebeautyledger-regulator-app)
+
+🔗 [Next.js Manufacturer App](https://github.com/iamademar/safebeautyledger-manufacturer-app)
+
+🔗 [Next.js Consumer AI Chatbot](https://github.com/iamademar/safebeautyledger-ai)
+
+
+
 # 1. Tech Stack
 The project uses the following technologies:
 - Solidity: A programming language for writing smart contracts on the Ethereum blockchain.
